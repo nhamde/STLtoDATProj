@@ -1,21 +1,18 @@
-// ShapePlotter3D.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-#include "reader.h"
-#include "data.h"
+#include "Reader.h"
+#include "Data.h"
 #include <iostream>
-#include "collector.h"
+#include "DataCollector.h"
+#include "ShapeWriter.h"
 using namespace std;
 
 int main()
 {
-    Reader reader;
-    Collector collector;
+    Reader Reader;
+    DataCollector Collector;
     Data* D;
+    ShapeWriter Writer;
     D = new Data();
-    reader.readData("cube-ascii.stl", D);
-    collector.processData(D->rawData, D);
-    for (int i = 0; i < D->trs.size(); i++) {
-        D->trs[i]->displayPts();
-        cout << endl;
-    }
+    Reader.readData("cube-ascii.stl", D);
+    Collector.processData(D->rawData, D);
+    Writer.write(*D, "output.dat");
 }
