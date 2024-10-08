@@ -12,3 +12,4 @@ void ShapeWriter::write(const Data& D, const string& fpath) {
 
 ShapeWriter::ShapeWriter() {}
 ShapeWriter::~ShapeWriter() {}
+
