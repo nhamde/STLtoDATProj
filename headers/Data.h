@@ -15,4 +15,7 @@ public:
 	void saveData();
 	Data();
 	~Data();
+
 };
+
+
