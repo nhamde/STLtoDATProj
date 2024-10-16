@@ -8,11 +8,8 @@ using namespace std;
 class Data {
 public:
 	vector<double> ddVec;
-	unordered_map<double, size_t> map;
-	vector<Triangle*>trs;
-	vector<string> rawData;
+	vector<Triangle>trs;
 public:
-	void saveData();
 	Data();
 	~Data();
 };

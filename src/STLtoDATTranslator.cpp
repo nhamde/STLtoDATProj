@@ -1,18 +1,19 @@
 #include "Reader.h"
 #include "Data.h"
 #include <iostream>
-#include "DataCollector.h"
+#include "Triangulation.h"
 #include "ShapeWriter.h"
 using namespace std;
 
 int main()
 {
     Reader Reader;
-    DataCollector Collector;
+    Triangulation Triangulator;
     Data* D;
     ShapeWriter Writer;
     D = new Data();
-    Reader.readData("cube-ascii.stl", D);
-    Collector.processData(D->rawData, D);
+    vector<string>rawData = Reader.readData("cube-ascii.stl", D);
+    unordered_map<double, size_t> map;
+    Triangulator.processData(rawData, D, map);
     Writer.write(*D, "output.dat");
 }

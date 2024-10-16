@@ -16,7 +16,5 @@ public:
 
 	Point(int xi = 0, int yi = 0, int zi = 0);
 
-	Point(int, int, int);
-
 	~Point();
 };

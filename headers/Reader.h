@@ -6,7 +6,7 @@
 
 class Reader {
 public:
-	void readData(string fname, Data* D);
 	Reader();
+	vector<string> readData(string fname, Data* D);
 	~Reader();
 };

@@ -1,6 +1,8 @@
 #include "Point.h"
 using namespace std;
 
+Point::Point(int xi, int yi, int zi) : x(xi), y(yi), z(zi) {}
+
 void Point::setX(int i) {
 	x = i;
 }
@@ -22,5 +24,5 @@ int Point::getZ() {
 void Point::displayPt() {
 	cout << Point::getX() << " " << Point::getY() << " " << Point::getZ() << endl;
 }
-Point::Point(int xi, int yi, int zi) : x(xi), y(yi), z(zi) {}
+
 Point::~Point() {}

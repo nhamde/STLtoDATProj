@@ -18,7 +18,7 @@
     <ClInclude Include="headers\Data.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\DataCollector.h">
+    <ClInclude Include="headers\Triangulation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="headers\Point.h">
@@ -38,7 +38,7 @@
     <ClCompile Include="src\Data.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\DataCollector.cpp">
+    <ClCompile Include="src\Triangulation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\Point.cpp">

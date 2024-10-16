@@ -1,6 +1,13 @@
 #include "Triangle.h"
 using namespace std;
 
+Triangle::Triangle() {
+	p1 = 0;
+	p2 = 0;
+	p3 = 0;
+}
+Triangle::Triangle(Point a, Point b, Point c) :p1(a), p2(b), p3(c) {}
+
 void Triangle::setp1(Point p) {
 	p1 = p;
 }
@@ -19,6 +26,5 @@ Point Triangle::getp2() {
 Point Triangle::getp3() {
 	return p3;
 }
-Triangle::Triangle() {}
-Triangle::Triangle(Point a, Point b, Point c) :p1(a), p2(b), p3(c) {}
+
 Triangle::~Triangle() {}
