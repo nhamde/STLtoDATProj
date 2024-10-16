@@ -19,7 +19,6 @@ Point Triangle::getp2() {
 Point Triangle::getp3() {
 	return p3;
 }
-
 Triangle::Triangle() {}
 Triangle::Triangle(Point a, Point b, Point c) :p1(a), p2(b), p3(c) {}
 Triangle::~Triangle() {}

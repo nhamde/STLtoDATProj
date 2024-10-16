@@ -19,6 +19,5 @@ void Reader::readData(string filename, Data* D) {
 
 
 }
-
 Reader::Reader() {}
 Reader::~Reader() {}

@@ -61,6 +61,5 @@ void DataCollector::processData(const vector<string>& rawData, Data* D) {
 		}
 	}
 }
-
 DataCollector::DataCollector() {}
 DataCollector::~DataCollector() {}

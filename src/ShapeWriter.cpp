@@ -9,6 +9,5 @@ void ShapeWriter::write(const Data& D, const string& fpath) {
 		<< D.ddVec[tr->getp3().getX()] << " " << D.ddVec[tr->getp3().getY()] << " " << D.ddVec[tr->getp3().getZ()] << endl
 		<< D.ddVec[tr->getp1().getX()] << " " << D.ddVec[tr->getp1().getY()] << " " << D.ddVec[tr->getp1().getZ()] << endl << "\n\n";
 }
-
 ShapeWriter::ShapeWriter() {}
 ShapeWriter::~ShapeWriter() {}

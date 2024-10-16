@@ -135,7 +135,6 @@
     <ClInclude Include="headers\Reader.h" />
     <ClInclude Include="headers\ShapeWriter.h" />
     <ClInclude Include="headers\Triangle.h" />
-    <ClInclude Include="Writer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Data.cpp" />

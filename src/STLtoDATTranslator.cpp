@@ -16,4 +16,3 @@ int main()
     Collector.processData(D->rawData, D);
     Writer.write(*D, "output.dat");
 }
-
