@@ -1,28 +1,34 @@
 #include "Point.h"
-using namespace std;
 
-Point::Point(int xi, int yi, int zi) : x(xi), y(yi), z(zi) {}
+Point::Point(int _x = 0, int _y = 0, int _z = 0) : x(_x), y(_y), z(_z) {}
+Point::~Point() {}
 
-void Point::setX(int i) {
-	x = i;
+void Point::setX(int _x)
+{
+	x = _x;
 }
-void Point::setY(int i) {
-	y = i;
+
+void Point::setY(int _y)
+{
+	y = _y;
 }
-void Point::setZ(int i) {
-	z = i;
+
+void Point::setZ(int _z)
+{
+	z = _z;
 }
-int Point::getX() {
+
+int Point::getX()
+{
 	return x;
 }
-int Point::getY() {
+
+int Point::getY()
+{
 	return y;
 }
-int Point::getZ() {
+
+int Point::getZ()
+{
 	return z;
 }
-void Point::displayPt() {
-	cout << Point::getX() << " " << Point::getY() << " " << Point::getZ() << endl;
-}
-
-Point::~Point() {}

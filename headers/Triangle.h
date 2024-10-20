@@ -1,19 +1,15 @@
 #pragma once
-#include <iostream>
 #include "Point.h"
-class Triangle {
-private:
-	Point p1, p2, p3;
+#include <vector>
+using namespace std;
+class Triangle
+{
+	vector<Point>vertices;
+
 public:
-	void setp1(Point);
-	void setp2(Point);
-	void setp3(Point);
-
-	Point getp1();
-	Point getp2();
-	Point getp3();
-
-	Triangle();
-	Triangle(Point, Point, Point);
+	Triangle(Point& p1, Point& p2, Point& p3);
 	~Triangle();
+
+	vector<Point> getVertices();
 };
+
