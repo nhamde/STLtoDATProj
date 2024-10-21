@@ -1,15 +1,12 @@
 #include <iostream>
-#include "STLReader.h"
-#include "Triangulation.h"
-#include "DatWriter.h"
+#include "Driver.h"
 
 using namespace std;
 
 int main()
 {
-    Triangulation tri;
-    STLReader Reader;
-    Reader.read("E:\\CCTECH\\Translator\\Test Cases\\cube-ascii.stl", tri);
-    DatWriter Writer;
-    Writer.write("output.dat", tri);
+    string iFilePath = "D:\\narayanWorkspace\\Translator\\Test Cases\\cube-ascii.stl";
+    string oFilePath = "output.dat";
+    Driver driver;
+    driver.translateSTLtoDAT(iFilePath, oFilePath);
 }

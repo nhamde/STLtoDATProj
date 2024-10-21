@@ -6,10 +6,6 @@
 #include "Utilities.h"
 using namespace std;
 
-#define X 0;
-#define Y 1;
-#define Z 2;
-
 void STLReader::read(const string& filename, Triangulation& triangulation)
 {
 	ifstream file(filename);
