@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="headers\Data.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="headers\Triangulation.h">
+    <ClInclude Include="headers\DatWriter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="headers\Point.h">
@@ -27,18 +24,24 @@
     <ClInclude Include="headers\Reader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\ShapeWriter.h">
+    <ClInclude Include="headers\STLReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="headers\Triangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="headers\Triangulation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Utilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Writer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Data.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Triangulation.cpp">
+    <ClCompile Include="src\DatWriter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\Point.cpp">
@@ -47,13 +50,16 @@
     <ClCompile Include="src\Reader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\ShapeWriter.cpp">
+    <ClCompile Include="src\STLReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\STLtoDATTranslator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\Triangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Triangulation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

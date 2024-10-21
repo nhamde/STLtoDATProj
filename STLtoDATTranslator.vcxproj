@@ -104,7 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>E:\CCTECH\Translator\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\narayanWorkspace\Translator\headers</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -119,7 +119,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\narayanWorkspace\STLtoDATTranslator\STLtoDATTranslator\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\narayanWorkspace\Translator\headers</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -129,21 +129,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="headers\Data.h" />
-    <ClInclude Include="headers\Triangulation.h" />
+    <ClInclude Include="headers\DatWriter.h" />
     <ClInclude Include="headers\Point.h" />
     <ClInclude Include="headers\Reader.h" />
-    <ClInclude Include="headers\ShapeWriter.h" />
+    <ClInclude Include="headers\STLReader.h" />
     <ClInclude Include="headers\Triangle.h" />
+    <ClInclude Include="headers\Triangulation.h" />
+    <ClInclude Include="headers\Utilities.h" />
+    <ClInclude Include="headers\Writer.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Data.cpp" />
-    <ClCompile Include="src\Triangulation.cpp" />
+    <ClCompile Include="src\DatWriter.cpp" />
     <ClCompile Include="src\Point.cpp" />
     <ClCompile Include="src\Reader.cpp" />
-    <ClCompile Include="src\ShapeWriter.cpp" />
+    <ClCompile Include="src\STLReader.cpp" />
     <ClCompile Include="src\STLtoDATTranslator.cpp" />
     <ClCompile Include="src\Triangle.cpp" />
+    <ClCompile Include="src\Triangulation.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

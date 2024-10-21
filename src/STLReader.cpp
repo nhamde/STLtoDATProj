@@ -28,7 +28,7 @@ void STLReader::read(const string& filename, Triangulation& triangulation)
 	Point p3(0, 0, 0);
 
 	bool formed3Pts = false;
-	size_t numTriangles = 1;
+	unsigned int numTriangles = 1;
 	vector<double> doubleNums;
 	int* integerArray = new int[3];
 	int numPts = 0;

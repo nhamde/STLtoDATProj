@@ -3,12 +3,12 @@
 #include <vector>
 #include <iomanip>
 
-bool areEqual(double d1, double d2)
+inline bool areEqual(double d1, double d2)
 {
-	return (std::abs(d1 - d2) < 0.00001);
+	return (std::fabs(d1 - d2) < 0.00001);
 }
 
-int * doublePtToIntPt(std::vector<double>& doubleNums, std::vector<double>& uniqueValues)
+inline int * doublePtToIntPt(std::vector<double>& doubleNums, std::vector<double>& uniqueValues)
 {
 	int* indices = new int[3];
 	
