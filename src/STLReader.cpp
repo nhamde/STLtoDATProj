@@ -8,13 +8,14 @@ using namespace std;
 
 void STLReader::read(const string& filename, Triangulation& triangulation)
 {
+	
 	ifstream file(filename);
 	if (!file) {
 		cerr << "Could not open the file." << endl;
 		return;
 	}
 	vector<Triangle> triangles;
-	vector<double> uniqueValues = { 0 };
+	vector<double> uniqueValues;
 	string vertex = "vertex";
 	string line;
 	stringstream ss;
@@ -28,6 +29,8 @@ void STLReader::read(const string& filename, Triangulation& triangulation)
 	vector<double> doubleNums;
 	int* integerArray = new int[3];
 	int numPts = 0;
+	map<double, int, comparer> uniqueMap;
+	int index = 0;
 
 	while (getline(file, line)) {
 		int found = line.find(vertex);
@@ -38,7 +41,8 @@ void STLReader::read(const string& filename, Triangulation& triangulation)
 			stringstream ss(line);
 			ss >> vertex >> num1 >> num2 >> num3;
 			doubleNums = { num1, num2, num3 };
-			integerArray = doublePtToIntPt(doubleNums, uniqueValues);
+
+			integerArray = doublePtToIntPt(doubleNums, uniqueValues, uniqueMap, index);
 
 			if (numPts % 3 == 0) {
 				p1.setX(integerArray[0]);

@@ -1,6 +1,7 @@
 #pragma once
 #include "Triangle.h"
 #include <vector>
+#include "Utilities.h"
 class Triangulation
 {
 	vector<Triangle> triangles;
