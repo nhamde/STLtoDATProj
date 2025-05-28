@@ -18,6 +18,8 @@ void Point::setZ(int _z)
 	z = _z;
 }
 
+
+
 int Point::getX()
 {
 	return x;
